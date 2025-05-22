@@ -1,0 +1,285 @@
+
+
+/*paleta de colores
+#F3EEEA
+#EBE3D5
+#B0A695
+#776B5D
+*/
+
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@500&display=swap');
+
+p{
+    color: #776B5D;
+    font-family:"Quicksand", sans-serif; ;
+    
+}
+
+h1{
+    color: #423F3E;
+    font-family:"Gabarito", sans-serif; ;
+    margin-top: 15px;
+}
+
+h2{
+    color: #423F3E;
+    font-family:"Quicksand", sans-serif; ;
+    margin-top: 7px;
+}
+
+
+/*header*/
+header{
+    background-color: #776B5D;
+   
+}
+
+li{
+    list-style: none;
+    font-family:"Quicksand", sans-serif;;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+    font-family:"Quicksand", sans-serif; ;
+    display: flex;
+    flex-direction: row;
+    width: 60px;
+    margin: 10px;
+
+}
+
+/*index*/
+
+.iconos-index{
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 50px ;
+}
+
+.icono-bloque{
+    text-align: center;
+}
+
+/*about*/
+
+.con-grid img{
+    width: 100%;
+    height: 100%;
+}
+
+.con-grid{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "img1 texto1 texto1"
+    "img1 texto1 texto1"
+    ;
+    grid-template-columns: 25% 40% 25% ;
+    grid-template-rows: 200px 200px 200px 200px;
+    gap: 15px;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.equipo-bloques{
+    display: flex;
+    flex-direction: row;
+    gap: 115px;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+}
+
+.equipo-bloque{
+    text-align: center;
+    max-width: 250px;
+}
+
+
+
+.p-nosotros{
+    margin-top: -15px;
+    grid-area: texto1;
+    
+}
+.grid-titulo1{
+    grid-area: titulo;
+}
+
+.img-nosotros{
+    grid-area: img1;
+}
+
+
+.h2-equipo{
+    margin-top: 40px;
+}
+
+/*proyectos*/
+
+.arauco{
+    margin-top: 40px;
+    margin-bottom: -5px;
+}
+
+.colegiales{
+    margin-top: 40px;
+    margin-bottom: -5px;
+}
+
+.palermo{
+    margin-top: 40px;
+    margin-bottom: -5px;
+}
+
+.tigre{
+    margin-top: 40px;
+    margin-bottom: -5px;
+}
+
+/*footer*/ 
+footer{
+    color: #000;
+    background-color: #776B5D;
+    padding:40px;
+}
+
+footer p {
+    color: #000;
+}
+
+h3{
+    color: #423F3E;
+    font-family: "Quicksand", sans-serif;;
+}
+
+h4{
+    color: #423F3E;
+    font-family:"Quicksand", sans-serif; ;
+
+}
+
+body{
+    background-color: #F3EEEA;
+}
+
+/*banner*/
+.banner{
+    background-image:url(../medios/apartment.jfif) ;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/*tamaño img*/
+.img-nosotros {
+    height: 600px;
+}
+
+.img-arauco{
+    height: 500px;
+}
+
+.img-colegiales{
+    height: 500px;
+}
+
+.img-palermo{
+    height: 500px;
+}
+
+.img-tigre{
+    height: 500px;
+}
+
+.img-phone{
+    width: 100px;
+    height: 100px;
+}
+
+.img-ig{
+    width: 100px;
+    height: 100px;
+}
+
+.img-pagos{
+    width: 100px;
+    height: 100px;
+}
+
+
+/*font contacto*/
+.mensaje{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+/*tamaño font*/
+.diseño-int{
+    font-size: larger;
+}
+
+.ref{
+    font-size: larger;
+}
+
+.asesoria{
+    font-size: larger;
+}
+
+.diseño{
+    font-size: larger;
+}
+
+.direccion{
+    font-size: larger;
+}
+.texto-1{
+    font-size: larger;
+}
+
+.pregunta{
+    text-align: center;
+
+}
+
+/* flex box*/
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 5px;
+    
+}
+
+/*mediaQ*/
+
+@media (max-width:480px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    /*nosotros*/
+    .con-grid{
+       grid-template-areas: 
+       "titulo"
+       "texto1"
+       "img1"; 
+       grid-template-columns: 1fr;
+       grid-template-rows: 70px repeat(5,150px);
+    }
+}
