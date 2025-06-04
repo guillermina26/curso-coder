@@ -16,38 +16,13 @@ header ul li {
   font-family: "Quicksand", sans-serif;
 }
 
-#servicios-page .anuncio-1, #servicios-page .anuncio-3, #servicios-page .anuncio-2 {
+.servicios-banner {
   width: 400px;
+  height: 150px;
   padding: 10px;
   text-align: center;
   margin-bottom: 20px;
-  margin-top: 60px;
   border: 1px solid black;
-  background-color: yellow;
-  transform: translate(30px) skew(20deg, 0);
-}
-#servicios-page .anuncio-2 {
-  background-color: red;
-  transform: translate(60px) skew(20deg, 0);
-  margin-top: 0;
-}
-#servicios-page .anuncio-3 {
-  background-color: green;
-  transform: translate(90px) skew(20deg, 0);
-  margin-top: 0;
-  color: #fff;
-}
-#servicios-page .fade-in {
-  opacity: 0;
-  animation: myAnimation 2s infinite;
-}
-@keyframes myAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 body {
@@ -273,4 +248,4 @@ nav ul {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.new.css.map */

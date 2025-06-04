@@ -1,0 +1,42 @@
+#servicios-page {
+    .anuncio-1 {
+        width: 400px;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 60px;
+        border: 1px solid black;
+        background-color: yellow;
+        transform: translate(30px) skew(20deg, 0);
+    }
+
+    .anuncio-2 {
+        @extend .anuncio-1;
+        background-color: red;
+        transform: translate(60px) skew(20deg, 0);
+        margin-top: 0;
+    }
+
+    .anuncio-3 {
+        @extend .anuncio-1;
+        background-color: green;
+        transform: translate(90px) skew(20deg, 0);
+        margin-top: 0;
+        color: #fff;
+    }
+
+    .fade-in {
+        opacity: 0;
+        animation: myAnimation 2s infinite;
+    }
+
+    @keyframes myAnimation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
